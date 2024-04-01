@@ -1,7 +1,7 @@
 <template>
-	<div>
-		
-	</div>
+	<nav id="navigation">
+		some text
+	</nav>
 </template>
 
 <script setup lang="ts">
