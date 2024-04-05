@@ -1,7 +1,11 @@
+@import 'variables';
+
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
-	color: black;
+	background-color: $dark;
+	color: $main-color;
 	font-family: 'Montserrat Variable', sans-serif;
+	min-height: 100vh;
 }
