@@ -1,8 +1,16 @@
 <template>
 	<nav id="navigation">
-		<div class="navigation-container">
-			
-		</div>
+
+			<div class="flex justify-content-center">
+				<div class="navigation-container mt-5 py-3 px-5">
+					<div class="flex" >
+						<div v-for="navigationItem in navigationList" :key="navigationItem.title">
+							{{ navigationItem.title }}
+						</div>
+					</div>
+				</div>
+			</div>
+
 	</nav>
 </template>
 
@@ -35,5 +43,16 @@ const navigationList = [
 </script>
 
 <style scoped lang="scss">
+#navigation {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0; 
+	right: 0;
+}
 
+.navigation-container {
+	border: 1px solid $main-color;
+	border-radius: 30px;
+}
 </style>

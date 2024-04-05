@@ -15,7 +15,6 @@
 </script>
 
 <style scoped lang="scss">
-@import '@/assets/styles/variables';
 .main-title {
 	text-align: center;
 	text-transform: uppercase;
@@ -52,5 +51,21 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+	// animation: color-change 5s linear infinite;
 }
+
+@keyframes color-change {
+    0% {
+			transform: rotate(0deg);
+    }
+
+    50% {
+			transform: rotate(180deg);
+    }
+
+    100% {
+			transform: rotate(360deg);
+    }
+}
+
 </style>
