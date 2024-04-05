@@ -1,10 +1,12 @@
 @import 'variables';
+@import 'resets';
 
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	background-color: $dark;
+	line-height: 1.2;
 	color: $main-color;
 	font-family: 'Montserrat Variable', sans-serif;
 	min-height: 100vh;
