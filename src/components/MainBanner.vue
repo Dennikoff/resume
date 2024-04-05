@@ -47,7 +47,7 @@
 }
 
 .orange-gradient {
-  background-image: conic-gradient(from 255deg at 50% 60%, $gradien-start, $gradien-end);
+  background-image: conic-gradient(from 255deg at 51% 70%, $gradien-start, $gradien-end);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;

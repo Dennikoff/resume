@@ -3,9 +3,11 @@
 
 			<div class="flex justify-content-center">
 				<div class="navigation-container mt-5 py-3 px-5">
-					<div class="flex" >
+					<div class="flex gap-5" >
 						<div v-for="navigationItem in navigationList" :key="navigationItem.title">
-							{{ navigationItem.title }}
+							<a :href="navigationItem.link">
+								{{ navigationItem.title }}
+							</a>
 						</div>
 					</div>
 				</div>
@@ -19,23 +21,23 @@
 const navigationList = [
 	{
 		title: 'Главная',
-		link: ''
+		link: '#'
 	},
 	{
 		title: 'Обо мне',
-		link: ''
+		link: '#'
 	},
 	{
 		title: 'Опыт',
-		link: ''
+		link: '#'
 	},
 	{
 		title: 'Портфолио',
-		link: ''
+		link: '#'
 	},
 	{
 		title: 'Контакты',
-		link: ''
+		link: '#'
 	},
 
 ]
@@ -49,10 +51,15 @@ const navigationList = [
 	top: 0;
 	left: 0; 
 	right: 0;
+	
 }
 
 .navigation-container {
 	border: 1px solid $main-color;
 	border-radius: 30px;
+	background-color: $dark;
+	font-weight: 700;
 }
+
+
 </style>
